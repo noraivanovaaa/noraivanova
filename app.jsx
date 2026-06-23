@@ -100,9 +100,10 @@ function Nav() {
   }, []);
   const links = [
   ["За Нора", "#about"],
+  ["Восък", "#wax"],
   ["Програма", "#program"],
   ["Консултации", "#consult"],
-  ["Восък", "#wax"],
+
   ["Отзиви", "#testimonials"],
   ["Въпроси", "#faq"]];
 
@@ -166,7 +167,7 @@ function Hero() {
           <Reveal delay={360}>
             <div className="mt-10 flex flex-wrap items-center gap-5">
               <CTA variant="primary">Пишете ни в Instagram</CTA>
-              <a href="#program" className="text-[13px] tracking-wide text-ink-soft hover:text-ink underline-offset-4 hover:underline">Разгледай програмата
+              <a href="#wax" className="text-[13px] tracking-wide text-ink-soft hover:text-ink underline-offset-4 hover:underline">Разбери повече за восъкотерапията
 
               </a>
             </div>
@@ -661,10 +662,11 @@ function App() {
     <main className="relative">
       <Nav />
       <Hero />
+      <Wax />
       <About />
       <Program />
       <Consultations />
-      <Wax />
+
       <Testimonials />
       <FAQ />
       <ContactFooter />
