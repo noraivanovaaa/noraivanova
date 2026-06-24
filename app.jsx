@@ -468,58 +468,94 @@ function Consultations() {
 
 // ---------- Wax therapy ----------
 function Wax() {
+  const forWhom = [
+    "Сблъскваш се с повтарящи се ситуации в живота си",
+    "Усещаш застой без ясна външна причина",
+    "Вземаш решения, които изглеждат правилни, но не дават резултат",
+    "Искаш да разбереш къде вътрешно се блокира процесът",
+    "Готова си да се освободиш от нещо, което вече не ти трябва",
+  ];
+  const steps = [
+    { icon: "🕯️", text: "Работа със символиката на восъка" },
+    { icon: "🧠", text: "Активиране на несъзнаваното чрез образи и асоциации" },
+    { icon: "🔍", text: "Осъзнаване на вътрешни конфликти и лични модели" },
+  ];
+  const effects = [
+    "Осветляване на несъзнавани убеждения",
+    "По-структурирано вземане на решения",
+    "По-свободна себереализация",
+  ];
   return (
-    <section id="wax" className="relative py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6 md:px-10">
+    <section id="wax" className="relative py-24 md:py-32 bg-gradient-to-b from-cream to-peach-soft/30">
+      <div className="mx-auto max-w-5xl px-6 md:px-10">
         <Reveal>
-          <div className="relative rounded-[2rem] overflow-hidden border border-sand bg-gradient-to-br from-peach-soft via-cream to-lavender-soft">
-            <div className="grid md:grid-cols-12 gap-0">
-              <div className="md:col-span-5 relative aspect-[4/5] md:aspect-auto bg-cream-deep">
-                {/* abstract candle/wax SVG placeholder */}
-                <svg viewBox="0 0 400 500" className="absolute inset-0 w-full h-full">
-                  <defs>
-                    <linearGradient id="wax" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#F0D4C8" />
-                      <stop offset="100%" stopColor="#C9B8D9" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="500" fill="#F4EEE4" />
-                  <ellipse cx="200" cy="380" rx="170" ry="14" fill="#E8DFD2" />
-                  <path d="M120 380 Q120 220 200 180 Q280 220 280 380 Z" fill="url(#wax)" opacity="0.85" />
-                  <path d="M200 180 Q200 140 200 120" stroke="#2D2A28" strokeWidth="1.5" fill="none" />
-                  <path d="M200 120 Q193 105 200 90 Q207 105 200 120 Z" fill="#F0D4C8" />
-                  <circle cx="200" cy="100" r="3" fill="#2D2A28" opacity="0.4" />
-                  {/* drips */}
-                  <path d="M150 320 Q150 360 145 380" stroke="#fff" strokeWidth="1" opacity="0.5" fill="none" />
-                  <path d="M250 290 Q252 340 248 380" stroke="#fff" strokeWidth="1" opacity="0.5" fill="none" />
-                </svg>
-                <div className="absolute top-5 left-5">
-                  <span className="inline-flex items-center gap-2 rounded-full bg-cream/90 backdrop-blur border border-sand px-4 py-1.5 text-[10px] uppercase tracking-[0.28em] text-ink">
-                    <span className="block h-1.5 w-1.5 rounded-full bg-peach"></span>
-                    Събитие на живо
-                  </span>
-                </div>
-              </div>
-              <div className="md:col-span-7 p-8 md:p-14 flex flex-col justify-center">
-                <Eyebrow>Восъкотерапия</Eyebrow>
-                <h2 className="font-display mt-6 text-4xl md:text-5xl leading-[1.04]">
-                  Древна практика за <span className="italic">прочистване</span> и обновление.
-                </h2>
-                <p className="mt-6 text-[15px] leading-relaxed text-ink-soft max-w-xl">
-                  Топен пчелен восък като огледало за това, което сме готови да отпуснем. Провеждам восъкотерапия на живо като камерно групово събитие — няколко пъти в годината, в София.
-                </p>
-                <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:items-center">
-                  <CTA variant="outline" small>Разбери повече в Instagram</CTA>
-                  <span className="text-[12px] uppercase tracking-[0.22em] text-ink-soft">Следваща дата · обявяваме скоро</span>
-                </div>
-              </div>
+          <Eyebrow className="justify-center">Авторски метод</Eyebrow>
+          <h2 className="font-display mt-6 text-center text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.04]">
+            Восъкотерапия —<br /><span className="italic font-light">древно знание, съвременен поглед</span>
+          </h2>
+          <p className="mt-8 mx-auto max-w-2xl text-center text-[15px] leading-relaxed text-ink-soft">
+            Това не е ритуал — това е терапевтична практика, която съкращава пътя към осъзнаването на вътрешни конфликти, повтарящи се модели и автоматични избори, които влияят на решенията ти.
+          </p>
+          <p className="mt-4 mx-auto max-w-2xl text-center text-[15px] leading-relaxed text-ink-soft">
+            Восъкотерапията съчетава древен тракийски ритуал с принципи на съвременната психология. Работи с образи и символи, които активират дълбоки вътрешни процеси и изваждат на повърхността скритите механизми зад поведението ни.
+          </p>
+        </Reveal>
+
+        <div className="mt-16 grid md:grid-cols-3 gap-8">
+          <Reveal delay={0}>
+            <div className="rounded-2xl border border-sand bg-cream p-8">
+              <h3 className="font-display text-xl mb-5">Подходяща е, ако:</h3>
+              <ul className="space-y-3">
+                {forWhom.map((item, i) =>
+                  <li key={i} className="flex gap-3 text-[14px] text-ink-soft leading-snug">
+                    <span className="mt-0.5 shrink-0 h-1.5 w-1.5 rounded-full bg-peach mt-2"></span>
+                    {item}
+                  </li>
+                )}
+              </ul>
             </div>
+          </Reveal>
+          <Reveal delay={120}>
+            <div className="rounded-2xl border border-sand bg-cream p-8">
+              <h3 className="font-display text-xl mb-5">Как протича:</h3>
+              <ul className="space-y-4">
+                {steps.map((s, i) =>
+                  <li key={i} className="flex gap-3 text-[14px] text-ink-soft leading-snug">
+                    <span className="text-lg shrink-0">{s.icon}</span>
+                    {s.text}
+                  </li>
+                )}
+              </ul>
+            </div>
+          </Reveal>
+          <Reveal delay={240}>
+            <div className="rounded-2xl border border-sand bg-lavender-soft p-8">
+              <h3 className="font-display text-xl mb-5">Ефектът:</h3>
+              <ul className="space-y-3">
+                {effects.map((item, i) =>
+                  <li key={i} className="flex gap-3 text-[14px] text-ink leading-snug">
+                    <span className="mt-2 shrink-0 h-1.5 w-1.5 rounded-full bg-lavender"></span>
+                    {item}
+                  </li>
+                )}
+              </ul>
+              <p className="mt-6 text-[12px] text-ink-soft leading-relaxed border-t border-sand pt-4">
+                Процесът не замества дългосрочна психотерапия. Той е концентрирана практика, която подпомага личния процес и дава посока за следващи стъпки.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+
+        <Reveal delay={120}>
+          <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <CTA variant="primary">Пишете ми в Instagram</CTA>
+            <span className="text-[12px] uppercase tracking-[0.22em] text-ink-soft">Следваща дата · обявяваме скоро</span>
           </div>
         </Reveal>
       </div>
     </section>);
-
 }
+
 
 // ---------- Testimonials ----------
 function Testimonials() {
