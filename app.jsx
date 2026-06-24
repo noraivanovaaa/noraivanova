@@ -89,6 +89,15 @@ function Divider({ className = "" }) {
 }
 
 // ---------- Nav ----------
+// ---------- Viber Banner ----------
+function ViberBanner() {
+  return (
+    <a href="https://invite.viber.com/?g2=AQBi5%2FFiOP5x7lW%2FlfFRqi5K25W5ULZSUVvp0%2BounpN%2BaNktVVHozpBAdhkldYG9" target="_blank" rel="noopener noreferrer"
+      className="block w-full bg-lavender text-white text-center py-3 px-4 text-[13px] tracking-wide hover:bg-lavender/90 transition-colors">
+      Присъедини се към безплатната ми Viber група — там качвам съдържание, което не качвам никъде другаде →
+    </a>);
+}
+
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -602,6 +611,7 @@ function ContactFooter() {
 function App() {
   return (
     <main className="relative">
+      <ViberBanner />
       <Nav />
       <Wax />
       <About />
