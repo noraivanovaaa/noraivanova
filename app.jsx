@@ -333,7 +333,7 @@ function Consultations() {
             <Reveal><Eyebrow>Консултации</Eyebrow></Reveal>
             <Reveal delay={120}>
               <h2 className="font-display mt-6 text-4xl md:text-5xl leading-[1.05] max-w-2xl">
-                За когато искаш по-камерно — само ти и аз.
+                Намери своя път към промяната.
               </h2>
             </Reveal>
           </div>
