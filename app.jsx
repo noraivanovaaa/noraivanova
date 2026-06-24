@@ -599,7 +599,7 @@ function App() {
       <Wax />
       <About />
       <Program />
-      <Hero />
+
       <Consultations />
       <Testimonials />
       <FAQ />
