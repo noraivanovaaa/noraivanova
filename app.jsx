@@ -188,7 +188,7 @@ function About() {
 // ---------- Program (main focus) ----------
 function Program() {
   const includes = [
-  { icon: <Icon.Moon className="h-5 w-5" />, t: "8 седмични модула", d: "Структуриран път през осем теми за вътрешна и външна реалност." },
+  { icon: <Icon.Moon className="h-5 w-5" />, t: "4 седмични модула", d: "Структуриран път през четири теми за вътрешна и външна реалност." },
   { icon: <Icon.Spark className="h-5 w-5" />, t: "Живи групови сесии", d: "Двучасови онлайн срещи в кръг, всяка седмица." },
   { icon: <Icon.Leaf className="h-5 w-5" />, t: "Ритуали и медитации", d: "Записани практики за работа с цикъла, луната и намерението." },
   { icon: <Icon.Compass className="h-5 w-5" />, t: "Личен дневник", d: "Подсказки и упражнения за всяка седмица — на хартия и дигитално." },
@@ -208,7 +208,7 @@ function Program() {
             </Reveal>
             <Reveal delay={240}>
               <p className="mt-7 text-[15px] leading-relaxed text-ink-soft max-w-md">
-                Осемседмично групово пътуване, в което учим да отваряме пространство — за пари, отношения, здраве и творчество — без да се изгаряме по пътя.
+                Четириседмично групово пътуване, в което учим да отваряме пространство — за пари, отношения, здраве и творчество — без да се изгаряме по пътя.
               </p>
             </Reveal>
 
@@ -221,7 +221,7 @@ function Program() {
                   </div>
                   <div>
                     <div className="text-[11px] uppercase tracking-[0.22em] text-ink-soft">Времетраене</div>
-                    <div className="mt-2 font-display text-xl">8 седмици</div>
+                    <div className="mt-2 font-display text-xl">4 седмици</div>
                   </div>
                   <div>
                     <div className="text-[11px] uppercase tracking-[0.22em] text-ink-soft">Език</div>
@@ -229,7 +229,7 @@ function Program() {
                   </div>
                   <div>
                     <div className="text-[11px] uppercase tracking-[0.22em] text-ink-soft">Следващ поток</div>
-                    <div className="mt-2 font-display text-xl">Юни 2026</div>
+                    <div className="mt-2 font-display text-xl">Октомври 2026</div>
                   </div>
                 </div>
                 <div className="mt-7 pt-5 border-t border-sand text-[13px] leading-relaxed text-ink-soft">
@@ -247,7 +247,7 @@ function Program() {
               <div className="rounded-[2rem] border border-sand bg-cream p-7 md:p-10">
                 <div className="flex items-center justify-between">
                   <Eyebrow>Какво включва</Eyebrow>
-                  <span className="text-[11px] uppercase tracking-[0.22em] text-ink-soft">06 елемента</span>
+                  <span className="text-[11px] uppercase tracking-[0.22em] text-ink-soft">05 елемента</span>
                 </div>
                 <ul className="mt-8 divide-y divide-sand">
                   {includes.map((p, i) =>
