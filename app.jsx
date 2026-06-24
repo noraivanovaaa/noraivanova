@@ -661,9 +661,9 @@ function App() {
     <main className="relative">
       <Nav />
       <Wax />
-      <Hero />
       <About />
       <Program />
+      <Hero />
       <Consultations />
       <Testimonials />
       <FAQ />
