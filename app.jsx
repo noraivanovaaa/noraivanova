@@ -99,7 +99,7 @@ function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   const links = [
-  ["Восък", "#wax"],
+  ["Восъкотерапия", "#wax"],
   ["За Нора", "#about"],
   ["Програма", "#program"],
   ["Консултации", "#consult"],
