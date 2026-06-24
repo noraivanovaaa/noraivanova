@@ -92,10 +92,15 @@ function Divider({ className = "" }) {
 // ---------- Viber Banner ----------
 function ViberBanner() {
   return (
-    <a href="https://invite.viber.com/?g2=AQBi5%2FFiOP5x7lW%2FlfFRqi5K25W5ULZSUVvp0%2BounpN%2BaNktVVHozpBAdhkldYG9" target="_blank" rel="noopener noreferrer"
-      className="block w-full bg-lavender text-white text-center py-3 px-4 text-[13px] tracking-wide hover:bg-lavender/90 transition-colors">
-      Присъедини се към безплатната ми Viber група — там качвам съдържание, което не качвам никъде другаде →
-    </a>);
+    <div className="sticky top-0 z-50 w-full bg-[#7360f2] text-white">
+      <div className="mx-auto max-w-7xl px-4 py-2.5 flex items-center justify-center gap-4 flex-wrap">
+        <span className="text-[13px] text-center">Присъедини се към безплатната ми Viber група — там качвам съдържание, което не качвам никъде другаде</span>
+        <a href="https://invite.viber.com/?g2=AQBi5%2FFiOP5x7lW%2FlfFRqi5K25W5ULZSUVvp0%2BounpN%2BaNktVVHozpBAdhkldYG9" target="_blank" rel="noopener noreferrer"
+          className="shrink-0 rounded-full bg-white text-[#7360f2] text-[12px] font-semibold tracking-wide px-4 py-1.5 hover:bg-white/90 transition-colors">
+          Присъедини се →
+        </a>
+      </div>
+    </div>);
 }
 
 function Nav() {
@@ -116,7 +121,7 @@ function Nav() {
   ["Въпроси", "#faq"]];
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-40 transition-all duration-500 ${scrolled ? "bg-cream/85 backdrop-blur-md border-b border-sand/60" : "bg-transparent"}`}>
+    <header className={`fixed inset-x-0 top-[44px] z-40 transition-all duration-500 ${scrolled ? "bg-cream/85 backdrop-blur-md border-b border-sand/60" : "bg-transparent"}`}>
       <div className="mx-auto max-w-7xl px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
           <span className="font-display text-2xl">Нора Иванова</span>
