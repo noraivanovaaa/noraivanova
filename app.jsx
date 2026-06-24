@@ -139,32 +139,6 @@ function Nav() {
 }
 
 // ---------- Hero ----------
-function Hero() {
-  return (
-    <section id="manifest" className="relative py-16 md:py-20 bg-gradient-to-br from-lavender-soft/40 via-cream to-peach-soft/30">
-      <div className="mx-auto max-w-4xl px-6 md:px-10 text-center">
-        <Reveal>
-          <Eyebrow className="justify-center">Програма · Духовно водачество</Eyebrow>
-        </Reveal>
-        <Reveal delay={120}>
-          <h2 className="font-display mt-6 text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.04]">
-            Манифестирай <span className="italic font-light">изобилието,</span><br />което вече е твое.
-          </h2>
-        </Reveal>
-        <Reveal delay={220}>
-          <p className="mt-6 mx-auto max-w-xl text-[15px] leading-relaxed text-ink-soft">
-            Помагам на жени да отворят пространство за изобилие, спокойствие и яснота чрез внимание, ритуал и осъзнато действие.
-          </p>
-        </Reveal>
-        <Reveal delay={320}>
-          <div className="mt-8 flex flex-wrap justify-center gap-5">
-            <CTA variant="primary">Пишете ни в Instagram</CTA>
-            <a href="#program" className="text-[13px] tracking-wide text-ink-soft hover:text-ink underline-offset-4 hover:underline self-center">Разгледай програмата</a>
-          </div>
-        </Reveal>
-      </div>
-    </section>);
-}
 function About() {
   return (
     <section id="about" className="relative py-24 md:py-36">
