@@ -99,13 +99,12 @@ function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   const links = [
-  ["За Нора", "#about"],
   ["Восък", "#wax"],
+  ["За Нора", "#about"],
   ["Програма", "#program"],
   ["Консултации", "#consult"],
-
   ["Отзиви", "#testimonials"],
-  ["Въпроси", "#faq"]];
+  ["Въпроси", "#faq"],
 
   return (
     <header className={`fixed inset-x-0 top-0 z-40 transition-all duration-500 ${scrolled ? "bg-cream/85 backdrop-blur-md border-b border-sand/60" : "bg-transparent"}`}>
@@ -167,7 +166,7 @@ function Hero() {
           <Reveal delay={360}>
             <div className="mt-10 flex flex-wrap items-center gap-5">
               <CTA variant="primary">Пишете ни в Instagram</CTA>
-              <a href="#wax" className="text-[13px] tracking-wide text-ink-soft hover:text-ink underline-offset-4 hover:underline">Разбери повече за восъкотерапията
+              <a href="#about" className="text-[13px] tracking-wide text-ink-soft hover:text-ink underline-offset-4 hover:underline">Разгледай програмата
 
               </a>
             </div>
@@ -470,7 +469,7 @@ function Consultations() {
 // ---------- Wax therapy ----------
 function Wax() {
   return (
-    <section id="wax" className="relative py-24 md:py-32">
+    <section id="wax" className="relative pt-28 md:pt-36 pb-24 md:pb-32">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <Reveal>
           <div className="relative rounded-[2rem] overflow-hidden border border-sand bg-gradient-to-br from-peach-soft via-cream to-lavender-soft">
@@ -661,12 +660,11 @@ function App() {
   return (
     <main className="relative">
       <Nav />
-      <Hero />
       <Wax />
+      <Hero />
       <About />
       <Program />
       <Consultations />
-
       <Testimonials />
       <FAQ />
       <ContactFooter />
