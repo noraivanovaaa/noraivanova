@@ -285,13 +285,11 @@ function Program() {
                   </ul>
                 </div>
               </Reveal>
-              </Reveal>
             </div>
           </div>
         </div>
       </div>
     </section>);
-
 }
 
 // ---------- Consultations ----------
