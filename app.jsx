@@ -407,20 +407,25 @@ function Wax() {
   ];
   return (
     <section id="wax" className="relative py-24 md:py-32 bg-gradient-to-b from-cream to-peach-soft/30">
-      <div className="mx-auto max-w-5xl px-6 md:px-10">
-        <Reveal>
-          <Eyebrow className="justify-center">Авторски метод</Eyebrow>
-          <h2 className="font-display mt-6 text-center text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.04]">
-            Восъкотерапия —<br /><span className="italic font-light">древно знание, съвременен поглед</span>
-          </h2>
-          <p className="mt-8 mx-auto max-w-2xl text-center text-[15px] leading-relaxed text-ink-soft">
-            Това не е ритуал — това е терапевтична практика, която съкращава пътя към осъзнаването на вътрешни конфликти, повтарящи се модели и автоматични избори, които влияят на решенията ти.
-          </p>
-          <p className="mt-4 mx-auto max-w-2xl text-center text-[15px] leading-relaxed text-ink-soft">
-            Восъкотерапията съчетава древен тракийски ритуал с принципи на съвременната психология и психотерапия. Работи с образи и символи, които активират дълбоки вътрешни процеси и изваждат на повърхността скритите механизми зад поведението ни.
-          </p>
-        </Reveal>
-
+      <div className="mx-auto max-w-6xl px-6 md:px-10">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+          <Reveal>
+            <img src="nora.png" alt="Нора Иванова" className="w-full max-w-md mx-auto rounded-3xl object-cover shadow-lg" />
+          </Reveal>
+          <Reveal delay={120}>
+            <Eyebrow>Авторски метод</Eyebrow>
+            <h2 className="font-display mt-6 text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.04]">
+              Восъкотерапия —<br /><span className="italic font-light">древно знание, съвременен поглед</span>
+            </h2>
+            <p className="mt-6 text-[15px] leading-relaxed text-ink-soft">
+              Това не е ритуал — това е терапевтична практика, която съкращава пътя към осъзнаването на вътрешни конфликти, повтарящи се модели и автоматични избори, които влияят на решенията ти.
+            </p>
+            <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
+              Восъкотерапията съчетава древен тракийски ритуал с принципи на съвременната психология и психотерапия. Работи с образи и символи, които активират дълбоки вътрешни процеси и изваждат на повърхността скритите механизми зад поведението ни.
+            </p>
+          </Reveal>
+        </div>
+        <div className="mx-auto max-w-5xl">
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           <Reveal delay={0}>
             <div className="rounded-2xl border border-sand bg-cream p-8">
@@ -478,6 +483,8 @@ function Wax() {
 
 
 // ---------- Testimonials ----------
+function Testimonials() {
+        </div>
 function Testimonials() {
   const items = [
   { q: "Не знаех какво да очаквам. Излязох с отговор на въпрос, който не знаех как да задам.", n: "Теодора М.", c: "Восъкотерапия" },
