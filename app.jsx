@@ -1,7 +1,7 @@
 // Нора Иванова — landing page
 const { useEffect, useRef, useState } = React;
 
-const INSTAGRAM_URL = "https://instagram.com/nora.ivanova";
+const INSTAGRAM_URL = "https://instagram.com/nora.ivanov";
 
 // ---------- Reveal on scroll ----------
 function Reveal({ children, className = "", delay = 0, as: Tag = "div" }) {
